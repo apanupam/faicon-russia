@@ -11,5 +11,8 @@
 body{
     font-family: "Red Hat Display", sans-serif;
 
-
 }
+
+.commoditiesSection .swiper-wrapper{
+    padding-bottom: 60px !important;
+  }

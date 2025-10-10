@@ -41,11 +41,11 @@ const StatBadge = ({ number, label }) => {
 
 const HeroSlider = () => {
   // Placeholder background image URL - replace with actual oil rig image
-  const bgImage = 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80';
+  const bgImage = '/hero.jpg';
 
   return (
-    <section className="bg-[#091F5B] px-15 py-7">
-      <div className="relative h-screen overflow-hidden rounded-md border border-[#363636] p-12">
+    <section className="bg-[#091F5B] py-7">
+      <div className="relative container mx-auto overflow-hidden rounded-md border border-[#363636] p-12">
         <span className='absolute top-0 start-0 h-full w-full bg-[linear-gradient(180deg,rgba(0,0,0,0.16)_54.74%,rgba(0,0,0,0.8)_90.95%),linear-gradient(283.51deg,rgba(0,0,0,0)_50.81%,rgba(0,0,0,0.8)_98.43%)] z-10 block'></span>
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -74,15 +74,20 @@ const HeroSlider = () => {
           <div className="w-full grid grid-cols-2 mt-30">
             <div className="mb-4">
               <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
-                spaceBetween={0}
-                slidesPerView={1}
-                autoplay={{ delay: 1000 }}
-                pagination={{ clickable: true }}
-                className="h-[80vh] md:h-[90vh]"
+               modules={[Navigation, Pagination, Autoplay]}
+               spaceBetween={0}
+               autoplay={{
+                 delay: 2000, // adjust delay speed
+                 disableOnInteraction: false,
+                 reverseDirection: false, // ✅ move only forward
+               }}
+               pagination={{ clickable: true }}
+               loop={true} // ✅ keep going forward infinitely
+               allowTouchMove={false} // optional: disable manual swipe
+               className="mx-h-30"
               >
                 <SwiperSlide>
-                  <span className='text-[#D9D9D9] font-bold mb-2 inline-block text-sm'></span>
+                  <span className='text-[#D9D9D9] font-bold mb-2 inline-block text-sm uppercase'>Industries</span>
                   <h3 className="text-4xl font-medium mb-2">OIL</h3>
                   <p className="text-md text-[#D9D9D9] font-normal leading-relaxed">
                     Leading organizations count on us for successful M&A transactions,
@@ -91,7 +96,7 @@ const HeroSlider = () => {
                   </p>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <span className='text-[#D9D9D9] font-bold mb-2 inline-block text-sm'></span>
+                  <span className='text-[#D9D9D9] font-bold mb-2 inline-block text-sm uppercase'>Industries</span>
                   <h3 className="text-4xl font-medium mb-2">OIL</h3>
                   <p className="text-md text-[#D9D9D9] font-normal leading-relaxed">
                     Leading organizations count on us for successful M&A transactions,
@@ -100,7 +105,7 @@ const HeroSlider = () => {
                   </p>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <span className='text-[#D9D9D9] font-bold mb-2 inline-block text-sm'></span>
+                  <span className='text-[#D9D9D9] font-bold mb-2 inline-block text-sm uppercase'>Industries</span>
                   <h3 className="text-4xl font-medium mb-2">OIL</h3>
                   <p className="text-md text-[#D9D9D9] font-normal leading-relaxed">
                     Leading organizations count on us for successful M&A transactions,

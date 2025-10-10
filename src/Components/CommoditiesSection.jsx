@@ -1,9 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
+import Commodities from './Commodities';
+import { MdArrowOutward } from 'react-icons/md';
 
 // Simple SVG Icon for Handshake
 const HandshakeIcon = () => (
@@ -14,37 +16,65 @@ const HandshakeIcon = () => (
 
 const CommoditiesSection = () => {
   const cards = [
-    {
-      title: "SELL SIDE DEAL FACILITATION",
+    { 
+      sub:'Sell side',
+      title: "DEAL FACILITATION",
       description: "We facilitate transactions by linking buyers and sellers in the energy and marine industries."
     },
-    {
-      title: "SELL SIDE DEAL FACILITATION",
+    { 
+      sub:'Sell side',
+      title: "DEAL FACILITATION",
       description: "We facilitate transactions by linking buyers and sellers in the energy and marine industries."
     },
-    {
-      title: "SELL SIDE DEAL FACILITATION",
+    { 
+      sub:'Sell side',
+      title: "DEAL FACILITATION",
       description: "We facilitate transactions by linking buyers and sellers in the energy and marine industries."
     },
-    {
-      title: "SELL SIDE DEAL FACILITATION",
+    { 
+      sub:'Sell side',
+      title: "DEAL FACILITATION",
       description: "We facilitate transactions by linking buyers and sellers in the energy and marine industries."
-    }
+    },
+    { 
+      sub:'Sell side',
+      title: "DEAL FACILITATION",
+      description: "We facilitate transactions by linking buyers and sellers in the energy and marine industries."
+    },
+    { 
+      sub:'Sell side',
+      title: "DEAL FACILITATION",
+      description: "We facilitate transactions by linking buyers and sellers in the energy and marine industries."
+    },
+    { 
+      sub:'Sell side',
+      title: "DEAL FACILITATION",
+      description: "We facilitate transactions by linking buyers and sellers in the energy and marine industries."
+    },
+    { 
+      sub:'Sell side',
+      title: "DEAL FACILITATION",
+      description: "We facilitate transactions by linking buyers and sellers in the energy and marine industries."
+    },
   ];
 
   return (
-    <section className="py-16 px-8 bg-blue-900 relative">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-16 px-8 bg-blue-900 relative commoditiesSection">
+      <div className="container mx-auto pt-4 pb-0">
         {/* Header */}
         <div className="flex justify-between items-center mb-12">
-          <h2 className="text-4xl font-bold text-white">Our Commodities</h2>
-          <button className="bg-white/10 text-white px-4 py-2 rounded-full font-semibold hover:bg-white/20 transition-colors">
-            →
+          <div className="">
+            <h4 className="text-sm font-normal text-[#D9D9D9] mb-2 uppercase">Demo</h4>
+            <h2 className="text-4xl font-bold text-white">Our Commodities</h2>
+          </div>
+          
+           <button className="bg-white text-[#091F5B] px-5 py-3 rounded-md hover:bg-blue-800 hover:text-white transition flex items-center cursor-pointer">
+            <MdArrowOutward className='text-xl'/>
           </button>
         </div>
 
         {/* Swiper */}
-        <Swiper
+        {/* <Swiper
           modules={[Pagination, Autoplay]}
           loop={true}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -61,14 +91,32 @@ const CommoditiesSection = () => {
             640: { slidesPerView: 2, spaceBetween: 20 },
             1024: { slidesPerView: 4, spaceBetween: 24 }
           }}
+        > */}
+        <Swiper
+         modules={[Navigation, Pagination, Autoplay]}
+         spaceBetween={0}
+         autoplay={{
+           delay: 2000, // adjust delay speed
+           disableOnInteraction: false,
+           reverseDirection: false, // ✅ move only forward
+         }}
+         pagination={{ clickable: true }}
+         loop={true}
+         allowTouchMove={false}
+         breakpoints={{
+          320: { slidesPerView: 1, spaceBetween: 16 },
+          640: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 4, spaceBetween: 24 }
+        }}
         >
           {cards.map((card, index) => (
-            <SwiperSlide key={index} className="!w-auto">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 flex flex-col items-center text-center border border-white/20">
-                <HandshakeIcon />
-                <h3 className="text-xl font-semibold text-white mt-4 mb-2">{card.title}</h3>
-                <p className="text-blue-200 text-sm leading-relaxed">{card.description}</p>
-              </div>
+            <SwiperSlide key={index}>
+              <Commodities
+                 textc={false}
+                 title="DEAL FACILITATION"
+                 desc="We facilitate transactions by linking buyers and sellers in the energy and marine industries."
+                 sub="Sell side"
+               />
             </SwiperSlide>
           ))}
         </Swiper>
