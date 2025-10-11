@@ -6,6 +6,7 @@ import { MdArrowOutward } from 'react-icons/md';
 function OurTeam() {
   return (
     <>
+    
     <section className="py-16 px-8 bg-[#FCFCFC]">
         <div className="container mx-auto py-4">
           <div className="text-center mb-12">
