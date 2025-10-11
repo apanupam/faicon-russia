@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/home.jsx";
 import PageLayout from "./Layouts/PageLayout";
-import OurTeam from "./Pages/ourTeam.jsx";
+
 import ContactUs from "./Pages/ContactUs.jsx";
 import About from "./Pages/About.jsx";
+import OurTeam from "./Pages/ourTeam.jsx";
 
 function App() {
 
