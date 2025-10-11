@@ -17,7 +17,6 @@ function Home() {
             <OtherCommoditiesSection/>
             <Partnership/>
             <ContactSection/>
-            <Footer/>
         </>
     )
 }

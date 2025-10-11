@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 
 const Header = () => {
@@ -42,9 +42,9 @@ const Header = () => {
         </ul>
 
         {/* CTA Button */}
-        <button className="bg-blue-900 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition flex items-center cursor-pointer">
+        <Link to='/contactus' className="bg-blue-900 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition flex items-center cursor-pointer">
           Contact Us <MdArrowOutward  className="ms-2"/>
-        </button>
+        </Link>
       </nav>
     </header>
   );
