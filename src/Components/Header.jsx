@@ -1,14 +1,26 @@
 import { Link, NavLink } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
+import { useState } from "react";
+import { IoCloseOutline } from "react-icons/io5";
 
 const Header = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
+    { name: "Our Team", path: "/ourteam" },
     { name: "Services", path: "/services" },
     { name: "Our Other Fields", path: "/fields" },
     { name: "Port of Delivery & Logistics", path: "/logistics" },
   ];
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // const handleMenuOpen = ()=>{
+  //   setIsMenuOpen(true);
+  // }
+
+  // const handleMenuClose = ()=>{
+  //   setIsMenuOpen(false);
+  // }
 
   return (
     <header className="bg-white shadow-md">
@@ -22,7 +34,7 @@ const Header = () => {
         </div>
 
         {/* Navigation Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-600">
+        <ul className="hidden xl:flex xl space-x-8 text-gray-600">
           {navLinks.map((link) => (
             <li key={link.name} className="me-3">
               <NavLink
@@ -40,6 +52,11 @@ const Header = () => {
             </li>
           ))}
         </ul>
+
+        {/* <div className="">
+          <IoMenu className="xl:hidden block text-xl text-black" />
+          <IoCloseOutline className="text-xl text-black" />
+        </div> */}
 
         {/* CTA Button */}
         <Link to='/contactus' className="bg-blue-900 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition flex items-center cursor-pointer">

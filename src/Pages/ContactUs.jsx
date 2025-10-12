@@ -48,7 +48,7 @@ function ContactUs() {
                 </div>
 
                 <div className="col-span-2">
-                   <button className="bg-[#818181] text-white px-6 py-3 rounded-md hover:bg-blue-800 transition flex items-center cursor-pointer w-fit mx-auto">Sen your message <MdArrowOutward  className="ms-2"/></button>
+                   <button className="bg-blue-900 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition flex items-center cursor-pointer w-fit mx-auto">Sent your message <MdArrowOutward  className="ms-2"/></button>
                 </div>
                 
             </div>

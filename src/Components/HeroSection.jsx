@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { MdArrowOutward } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 // Simple Counter Hook for count-up animation
 const useCounter = (target, duration = 2000) => {
@@ -66,9 +67,9 @@ const HeroSlider = () => {
           <p className="text-lg font-normal mb-4 text-[#CFD2D7]">FOR THE OIL AND GAS INDUSTRY</p>
 
           {/* Contact Button */}
-          <button className="bg-white text-blue-900 px-6 py-3 rounded-sm font-semibold hover:bg-gray-100 transition-colors mb-12 flex items-center">
+          <Link to='/contactus' className="bg-white w-fit text-blue-900 px-6 py-3 rounded-sm font-semibold hover:bg-gray-100 transition-colors mb-12 flex items-center">
             Contact Us <MdArrowOutward  className="ms-2"/>
-          </button>
+          </Link>
 
           {/* Industries Section */}
           <div className="w-full grid grid-cols-2 mt-30">

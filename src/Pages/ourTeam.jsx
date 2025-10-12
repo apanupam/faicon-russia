@@ -24,7 +24,7 @@ function OurTeam() {
 
           <div className="grid grid-cols-6 gap-8 ">
             <div className="col-span-3 relative z-1 py-15 px-12 overflow-hidden rounded-md">
-              <img src="/cmd.jpg" className="absolute top-0 start-0 h-full w-full object-cover -z-1"/>
+              <img src="/cmd.jpeg" className="absolute top-0 start-0 h-full w-full object-cover -z-1"/>
             </div>
 
             <div className="col-span-3 relative z-1 flex flex-col justify-end">

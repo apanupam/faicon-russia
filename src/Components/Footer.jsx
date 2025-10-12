@@ -19,7 +19,7 @@ function Footer() {
                 </div>
     
                 <div className="">
-                    <img src="/logo.svg" alt="Falcon Logo"/>
+                    <img src="/f-logo.svg" alt="Falcon Logo"/>
                     <ul className='flex flex-col justify-start items-start gap-4 text-[#EDF0F5] mt-5'>
                         <li className='font-normal'>
                             <span className='font-semibold block mb-1'>Address:</span>
