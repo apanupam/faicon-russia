@@ -16,22 +16,22 @@ function ContactUs() {
 
             <div className="grid grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div className="bg-[#EDF0F5] border border-[#D9D9D9] rounded-md relative h-13">
-                    <input type="text" placeholder='Your Name' className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal' />
+                    <input type="text" placeholder='Your Name' className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-white transition' />
                     <span className="text-md text-[#818181] font-normal absolute top-0 right-0 me-2 mt-2">*</span>
                 </div>
 
                 <div className="bg-[#EDF0F5] border border-[#D9D9D9] rounded-md relative h-13">
-                    <input type="email" placeholder='Email address' className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal' />
+                    <input type="email" placeholder='Email address' className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal  rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-white transition' />
                     <span className="text-md text-[#818181] font-normal absolute top-0 right-0 me-2 mt-2">*</span>
                 </div>
 
                 <div className="bg-[#EDF0F5] border border-[#D9D9D9] rounded-md relative h-13">
-                    <input type="tel" placeholder='99999-99999' className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal' />
+                    <input type="tel" placeholder='99999-99999' className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-white transition' />
                     <span className="text-md text-[#818181] font-normal absolute top-0 right-0 me-2 mt-2">*</span>
                 </div>
 
                 <div className="bg-[#EDF0F5] border border-[#D9D9D9] rounded-md relative h-13 pe-3">
-                    <select name="" id="" className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal'>
+                    <select name="" id="" className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-white transition'>
                         <option value="demo1">Subject </option>
                         <option value="demo1">Subject Demo1</option>
                         <option value="demo1">Subject Demo1</option>
@@ -43,12 +43,12 @@ function ContactUs() {
                 </div>
 
                 <div className="bg-[#EDF0F5] border border-[#D9D9D9] rounded-md relative h-40 col-span-2">
-                    <textarea name="" placeholder='Email address' className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal'></textarea>
+                    <textarea name="" placeholder='Type message' className='h-full w-full text-md bg-transparent border-0 outline-0 p-4 text-[#818181] font-normal  rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-white transition'></textarea>
                     <span className="text-md text-[#818181] font-normal absolute top-0 right-0 me-2 mt-2">*</span>
                 </div>
 
                 <div className="col-span-2">
-                   <button className="bg-blue-900 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition flex items-center cursor-pointer w-fit mx-auto">Sent your message <MdArrowOutward  className="ms-2"/></button>
+                   <button className="bg-blue-900 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition flex items-center cursor-pointer w-fit mx-auto">Send your message <MdArrowOutward  className="ms-2"/></button>
                 </div>
                 
             </div>

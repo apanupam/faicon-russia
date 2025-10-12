@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<PageLayout />}>
           {/* Default route (index) */}
           <Route index element={<Home />} />
-          <Route path="/services" element={<OurTeam />} />
+          <Route path="/ourteam" element={<OurTeam />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/about" element={<About />} />
         </Route>
