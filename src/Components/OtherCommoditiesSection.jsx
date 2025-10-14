@@ -65,11 +65,11 @@ const OtherCommoditiesSection = () => {
         <div className="flex justify-between items-center mb-12">
           <div className="">
             <h4 className="text-sm font-normal text-[#091F5B] mb-2 uppercase">Demo</h4>
-            <h2 className="text-4xl font-bold text-[#091F5B]">Our Other Commodities</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#091F5B]">Our Other Commodities</h2>
           </div>
           
            <button className="bg-[#091F5B] text-white px-5 py-3 rounded-md hover:bg-blue-800 hover:text-white transition flex items-center cursor-pointer">
-            <MdArrowOutward className='text-xl'/>
+            <MdArrowOutward className='text-lg sm:text-xl'/>
           </button>
         </div>
 

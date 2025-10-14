@@ -15,4 +15,26 @@ body{
 
 .commoditiesSection .swiper-wrapper{
     padding-bottom: 60px !important;
-  }
+}
+
+
+@media (max-width:1024px) {
+    .menu {
+        z-index: 99;
+        position: absolute;
+        top: 86px;
+        left: 0;
+        padding: 40px;
+        width: 100%;
+        min-height: 80vh;
+        background: white;
+    }
+    .menu.close{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu.open{
+        opacity: 1;
+        visibility: visible;
+    }
+}
