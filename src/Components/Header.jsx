@@ -9,7 +9,8 @@ const Header = () => {
     { name: "About Us", path: "/about" },
     { name: "Our Team", path: "/ourteam" },
     { name: "Services", path: "/services" },
-    { name: "Our Other Fields", path: "/fields" },
+    { name: "Product List & Quantity", path: "/product-list" },
+    { name: "Our Oil Fields", path: "/fields" },
     { name: "Port of Delivery & Logistics", path: "/logistics" },
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);

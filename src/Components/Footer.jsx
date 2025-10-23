@@ -45,8 +45,8 @@ function Footer() {
             <div className="flex justify-center gap-3 sm:justify-between flex-wrap sm:flex-nowrap py-8 border-t border-[#455B97]">
                 <p className='text-sm  mb-0 font-normal text-[#EDF0F5]'>Copyright © 2018 <Link to='#' target='_blank' className='underline'> Falcon Russia</Link>. All Rights Reserved.</p>
                 <ul className='flex items-center mb-0 gap-3 text-sm text-[#EDF0F5] font-normal'>
-                    <li><Link to='#' className='hover:text-gray underline'>Privacy Policy</Link></li>
-                    <li><Link to='#' className='hover:text-gray underline'>Terms of Service</Link></li>
+                    <li><Link to='/privacy-policy' className='hover:text-gray underline'>Privacy Policy</Link></li>
+                    <li><Link to='/terms-service' className='hover:text-gray underline'>Terms of Service</Link></li>
                 </ul>
             </div>
         </div>

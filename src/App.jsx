@@ -6,6 +6,9 @@ import PageLayout from "./Layouts/PageLayout";
 import ContactUs from "./Pages/ContactUs.jsx";
 import About from "./Pages/About.jsx";
 import OurTeam from "./Pages/ourTeam.jsx";
+import PrivacyPolicy from "./Pages/PrivacyPolicy.jsx";
+import ProductList from "./Pages/ProductList.jsx";
+import TermsService from "./Pages/TermsService.jsx";
 
 function App() {
 
@@ -19,6 +22,9 @@ function App() {
           <Route path="/ourteam" element={<OurTeam />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/about" element={<About />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-service" element={<TermsService />} />
+          <Route path="/product-list" element={<ProductList />} />
         </Route>
       </Routes>
     </Router>
