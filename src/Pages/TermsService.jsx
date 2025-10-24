@@ -40,10 +40,9 @@ function TermsService() {
                     </ul>
                 </div>
 
-
-                <div className="">
+                <div>
                     <h3 className='text-3xl text-semibold text-[#444444] mb-1'>4. Limitation of Liability</h3>
-                    <ul className='text-xl text-normal text-[#444444] list-disc ps-6 '>
+                    <ul className='text-xl text-normal text-[#444444] list-disc ps-6'>
                         <li className='mb-1'>Falcon Russia shall not be liable for any direct or indirect damages arising from the use or inability to use this website or its services. </li> 
                     </ul>
                 </div>
@@ -55,8 +54,8 @@ function TermsService() {
                         <li className='mb-1'>These Terms are governed by the laws of the Russian Federation and interpreted accordingly.</li> 
                     </ul>
                 </div>
+
             </div>
-            
         </div>
     </section>
   )

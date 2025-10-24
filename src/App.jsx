@@ -9,6 +9,9 @@ import OurTeam from "./Pages/ourTeam.jsx";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.jsx";
 import ProductList from "./Pages/ProductList.jsx";
 import TermsService from "./Pages/TermsService.jsx";
+import OurOilFields from "./Pages/OurOilFields.jsx";
+import PortDeliveryLogistics from "./Pages/PortDeliveryLogistics.jsx";
+import Services from "./Pages/Services.jsx";
 
 function App() {
 
@@ -25,6 +28,9 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-service" element={<TermsService />} />
           <Route path="/product-list" element={<ProductList />} />
+          <Route path="/our-oil-fields" element={<OurOilFields />} />
+          <Route path="/logistics" element={<PortDeliveryLogistics />} />
+          <Route path="/services" element={<Services />} />
         </Route>
       </Routes>
     </Router>
