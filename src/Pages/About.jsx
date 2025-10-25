@@ -1,9 +1,10 @@
 import React from 'react'
+import FAQ from '../Components/Faqs'
 
 function About() {
   return (
     <>
-        <section className="py-4 px-8 bg-white">
+        <section className="py-10 px-8 bg-white">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 gap-8 ">
                     <div className="col-span-3 relative z-1 h-[529px] overflow-hidden rounded-md">
@@ -25,7 +26,7 @@ function About() {
             </div>
         </section>
 
-        <section className="py-4 px-8 bg-white">
+        <section className="py-10 px-8 bg-white">
             <div className="container mx-auto">
                 <div className="text-center mb-12">
                     <h5 className="text-sm font-normal mb-2 text-[#344EAD] uppercase">A line about the company</h5>
@@ -60,7 +61,7 @@ function About() {
             </div>
         </section>
 
-        <section className="py-4 px-8 bg-white">
+        <section className="py-10 px-8 bg-white">
             <div className="container mx-auto">
                 <div className="grid grid-cols-3 gap-5">
                     <div className="py-14 px-10 col-span-3 border border-[#D7EBFF] rounded-2xl">
@@ -90,7 +91,7 @@ function About() {
             </div>
         </section>
 
-        <section className="py-4 px-8 bg-white">
+        <section className="py-10 px-8 bg-white">
             <div className="container mx-auto">
                 <div className="text-start mb-12">
                     <h5 className="text-sm font-normal mb-2 text-[#344EAD] uppercase">Have a Tour</h5>
@@ -140,6 +141,8 @@ function About() {
                 </div>
             </div>
         </section>
+
+        <FAQ/>
     </>
   )
 }
